@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+body {
+  user-select: none;
+  overflow-y: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: hsl(218deg 50% 91%);
+  height: 100vh;
+  margin: 0;
+}
+
+.screen-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  gap: 2em;
+}
+
+.screen-1 .logo {
+  width: 150px; /* Adjust size as needed */
+  height: 150px; /* Ensure height matches width for a round logo */
+  border-radius: 50%; /* Make the image round */
+  object-fit: cover; /* Ensure the image covers the area without stretching */
+  margin-bottom: 1em; /* Adjust spacing as needed */
+}
+
+.email, .password {
+  background: hsl(0deg 0% 100%);
+  box-shadow: 0 0 2em hsl(231deg 62% 94%);
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  border-radius: 20px;
+  color: hsl(0deg 0% 30%);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.password {
+  margin-top: 1em; /* Add margin to create space between username and password */
+}
+
+.sec-2 {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.email input, .password input {
+  outline: none;
+  border: none;
+  flex: 1;
+  &::placeholder {
+    color: hsl(0deg 0% 0%);
+    font-size: 0.9em;
+  }
+}
+
+.email svg, .password svg {
+  color: hsl(0deg 0% 30%);
+}
+
+.password .show-hide {
+  margin-right: -1.5em;
+  cursor: pointer;
+}
+
+.login {
+  padding: 1em;
+  background: #078eb5;
+  color: hsl(0 0 100);
+  border: none;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%; 
+  gap: 0.5em;
+  margin-top: 1em; 
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.7em;
+  color: hsl(0deg 0% 37%);
+  width: 100%;
+  padding-bottom: 1em;
+  margin-top: 1em; /* Add margin to create space between login button and footer */
+}
+
+.footer span {
+  cursor: pointer;
+}

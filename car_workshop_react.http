@@ -1,0 +1,6 @@
+@car_workshop_react_HostAddress = http://localhost:5023
+
+GET {{car_workshop_react_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

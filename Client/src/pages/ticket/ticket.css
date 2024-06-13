@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+body {
+    user-select: none;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: hsl(218deg 50% 91%);
+    height: 100vh;
+    margin: 0;
+}
+
+.screen-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    gap: 2em;
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 0 2em hsl(231deg 62% 94%);
+    padding: 2em;
+    border-radius: 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 1em;
+    font-size: 2rem;
+    color: hsl(0deg 0% 30%);
+}
+
+.ticket-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.info-section,
+.parts-section,
+.timeslots-section {
+    background: #fff;
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 0 0 1em hsl(231deg 62% 94%);
+}
+
+.info-item,
+.table {
+    margin-bottom: 1em;
+}
+
+.button-group {
+    display: flex;
+    gap: 0.5em;
+}
+
+.button {
+    padding: 0.5em 1em;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button.blue {
+    background-color: #078eb5;
+}
+
+.button.green {
+    background-color: #28a745;
+}
+
+.button.yellow {
+    background-color: #ffc107;
+}
+
+.button:hover {
+    opacity: 0.8;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th,
+.table td {
+    padding: 0.5em;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+.table th {
+    background-color: #078eb5;
+    color: #fff;
+}
+
+.table tbody tr:hover {
+    background-color: #f1f1f1;
+}
